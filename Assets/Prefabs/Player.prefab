@@ -400,15 +400,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4137de8eaeb274191a91c50d7b7e13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerMaxHealth: 100
-  playerCurrentHealth: 100
+  PlayerMaxHealth: 5
+  playerCurrentHealth: 6
   numOfHearts: 5
   hearts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 114577593198056746, guid: 240bbe7905a24d34b94dc6e741e31f55, type: 2}
+  - {fileID: 114691197919924580, guid: 240bbe7905a24d34b94dc6e741e31f55, type: 2}
+  - {fileID: 114534849719688172, guid: 240bbe7905a24d34b94dc6e741e31f55, type: 2}
+  - {fileID: 114021416002486038, guid: 240bbe7905a24d34b94dc6e741e31f55, type: 2}
+  - {fileID: 114611723597728594, guid: 240bbe7905a24d34b94dc6e741e31f55, type: 2}
   fullHeart: {fileID: 21300006, guid: 570497032f5f11d41abdd2088c7401be, type: 3}
   emptyHeart: {fileID: 21300014, guid: 570497032f5f11d41abdd2088c7401be, type: 3}
 --- !u!114 &114680560251791900

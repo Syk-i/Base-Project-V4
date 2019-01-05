@@ -33,12 +33,15 @@ public class PlayerHealthManager : MonoBehaviour
 
             
         }
+        
     }
 
     public void HurtPlayer(int damageToGive)
     {
         playerCurrentHealth -= damageToGive;
-        Debug.Log(damageToGive);
+
+        Debug.Log("damageToGive: "+ damageToGive);
+        Debug.Log("PlayerHealth" + playerCurrentHealth);
         if (playerCurrentHealth > numOfHearts)
         {
             playerCurrentHealth = numOfHearts;

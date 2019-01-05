@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour {
     GameObject loadScreen;
+    GameObject loadHUD;
     public GameObject player;
     public GameObject enemy;
     public GameObject chest;
@@ -45,6 +46,7 @@ public class LevelGenerator : MonoBehaviour {
         
         //Random.seed = 10;// if you want to generate the same level again
         loadScreen = gameObject.GetComponent<Canvasui>().uidrop;
+        loadHUD = gameObject.GetComponent<Canvasui>().HUD;
         Show();
     }
   void Show()
@@ -55,6 +57,7 @@ public class LevelGenerator : MonoBehaviour {
     void Hide()
     {
         loadScreen.SetActive(false);
+        loadHUD.SetActive(true);
     }
 
     IEnumerator GenerateLevel() //used for debugging

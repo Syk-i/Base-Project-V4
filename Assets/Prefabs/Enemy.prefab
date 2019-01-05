@@ -118,7 +118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75ea8f0982f480b4483d126f393ba1d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageToGive: 1
 --- !u!114 &114653838382719092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,7 +133,8 @@ MonoBehaviour:
   enemyString: 0
   baseattack: 0
   moveSpeed: 10
-  target: {fileID: 0}
+  damageToGive: 1
+  target: {fileID: 4898133383649056, guid: 8216cf8ac531de04eb29b38c689c930c, type: 2}
   chaseRadius: 25
   attackRadius: 4
   homePosition: {fileID: 0}

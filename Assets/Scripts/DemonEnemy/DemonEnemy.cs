@@ -36,11 +36,16 @@ public class DemonEnemy : Enemy {
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             Debug.Log("Hello");
-            
+            other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damageToGive);
+
+
+
         }
-        
+
     }
+   
+
 }

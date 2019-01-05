@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour {
     public string enemyString;
     public int baseattack;
     public float moveSpeed;
+    public int damageToGive;
+   
     
 	// Use this for initialization
 	void Start () {
@@ -28,4 +30,5 @@ public class Enemy : MonoBehaviour {
             gameObject.SetActive(false);
         }
     }
+    
 }

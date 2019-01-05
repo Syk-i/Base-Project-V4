@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HurtPlayer : MonoBehaviour {
-    public int damageToGive;
+    //public int damageToGive;
     Vector3 pushDirection;
     Rigidbody2D rb;
 
@@ -24,14 +24,14 @@ public class HurtPlayer : MonoBehaviour {
             
             rb = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 difference = rb.transform.position - transform.position;
-            difference = difference.normalized * 25
-                ;
+            difference = difference.normalized * 25;
+                
             rb.AddForce(difference, ForceMode2D.Impulse);
-            Debug.Log(rb.velocity);
-
+            Debug.Log("Hurt");
+            
 
             //other.gameObject.GetComponent<Rigidbody2D>().AddForce(pushDirection*-100);
-            // other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damageToGive);
+
             StartCoroutine(KnockCo(rb));
             
 
