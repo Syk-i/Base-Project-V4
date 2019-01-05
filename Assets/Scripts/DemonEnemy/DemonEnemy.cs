@@ -39,7 +39,7 @@ public class DemonEnemy : Enemy {
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("Hello");
-            other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damageToGive);
+           // other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(damageToGive);
 
 
 
